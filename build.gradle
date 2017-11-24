@@ -1,0 +1,22 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'uk.rrkey.starter.selenium'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile group: 'io.ddavison', name: 'conductor', version: '3.0.1'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
+}
